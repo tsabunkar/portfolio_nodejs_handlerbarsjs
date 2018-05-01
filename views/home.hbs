@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{pageTitle}}</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    {{> myHeader}} {{> myName}}
+    <div class="container">
+        <div class="modal-body row">
+
+            <div class="col-md-6" id="leftDivId">
+                <img src="../images/tejas.png" class="img-circle" alt="Tejas" width="500" height="400">
+            </div>
+
+            <div class="col-md-6" id="rightDivId">
+                <div>
+                    <h1>Hi There,</h1>
+                    <h3>a bit about me:</h3>
+                    <div style="text-align:center">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div style="padding: 50px 10px;">
+                                    <a href="./resume.hbs" role="button" class="b1link" style="padding: 50px 10px; color: white"> MY RESUME</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div style="padding: 50px 10px;">
+                                    <a href="./projects.hbs" role="button" class="b2link" style="padding: 50px 10px; color: white">MY WORK</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div style="padding: 50px 10px;">
+                                    <a href="./contact.hbs" role="button" class="b3link" style="padding: 50px 10px; color: white">LIKE TO HERE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 30px">
+                    <p>
+                        I am full-stack developer. My proficiency include Java and JavaScript. I am passionate about developing good software and
+                        adopting new skills, Apart for coding my interest also includes reading novels, gym workouts, attending
+                        conference meetup, learning new technologies. Aims to become a fine Software Architect.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> myFooter}}
+
+</body>
+
+</html>

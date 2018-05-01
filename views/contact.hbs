@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{pageTitle}}</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> {{!-- MDN bootstrap --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    {{> myHeader}} {{> myName}}
+    <div class="container">
+        <div class="modal-body row">
+            <div class="col-md-4" id="leftDivId">
+
+                <img src="../images/tej.jpg" class="img-rounded" alt="Tejas" width="149px" height="190px">
+                <br/>
+                <div style="padding-top: 10px">
+                    <b>Cell</b>
+                    <label>9900888061</label>
+                    <br>
+                    <b>Email</b>
+                    <label>tsabunkar@gmail.com</label>
+                    <br>
+                    <b>Git-Hub</b>
+                    <label>
+                        <a href="https://github.com/tsabunkar"> https://github.com/tsabunkar</a>
+                    </label>
+                    <br>
+                    <b>linkedin</b>
+                    <label>
+                        <a href="https://www.linkedin.com/in/tsabunkar/"> https://www.linkedin.com/in/tsabunkar/</a>
+                    </label>
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="col-md-6" id="rightDivId">
+                <h2>Love To Here From You</h2>
+                <div class="md-form">
+                    <input type="text" id="nameInp" class="form-control">
+                    <label for="form1">Name</label>
+                </div>
+                <!-- Material input -->
+                <div class="md-form">
+                    <input type="email" id="inputValidationEx" class="form-control validate">
+                    <label for="inputValidationEx" data-error="wrong" data-success="right">Email</label>
+                </div>
+                <div class="md-form">
+                    <label for="form1">Message</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <div align="center">
+                    <button type="submit" class="btn btn-primary btn-md">Send</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    {{> myFooter}}
+</body>
+
+</html>
