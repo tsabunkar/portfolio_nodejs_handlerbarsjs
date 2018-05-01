@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 var app = express();
+const port = process.env.PORT || 3000;
 
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));//It shld be public folder only
@@ -54,6 +55,6 @@ app.get('/contact.hbs', (request, response) => {
 
 
 
-app.listen(3000, () => {
-    console.log('Server is up @3000')
+app.listen(port, () => {
+    console.log(`Server is up @ ${port}`)
 })
