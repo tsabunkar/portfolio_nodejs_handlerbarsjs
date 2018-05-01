@@ -40,7 +40,7 @@ app.get('/resume.hbs', (request, response) => {
 app.get('/projects.hbs', (request, response) => {
     response.render('projects.hbs', {
         //2nd argum is obj
-        pageTitle: 'Resume Page',
+        pageTitle: 'Project Page',
     });
 
 })
@@ -48,7 +48,7 @@ app.get('/projects.hbs', (request, response) => {
 app.get('/contact.hbs', (request, response) => {
     response.render('contact.hbs', {
         //2nd argum is obj
-        pageTitle: 'Resume Page',
+        pageTitle: 'Contact Page',
     });
 
 })
